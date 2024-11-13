@@ -5,6 +5,7 @@ import HomeCategory from "./components/home-category";
 import HomeDepartment from "./components/home-department";
 import HomeAbout from "./components/home-about";
 import HomeBenefits from "./components/home-benefits";
+import HomeClients from "./components/home-clients";
 // import HomeService from "./components/home-service";
 // import HomeChoose from "./components/home-choose";
 // import HomeClients from "./components/home-clients";
@@ -14,11 +15,13 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      <HomeBest />
+      <HomeBest />  
       <HomeCategory />
       <HomeDepartment />
       <HomeAbout />
+      <HomeClients />
       <HomeBenefits />
+
       {/* <HomeChoose /> */}
       {/* <HomeClients /> */}
       {/* <HomeContact /> */}

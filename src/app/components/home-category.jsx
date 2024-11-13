@@ -28,32 +28,32 @@ const HomeCategory = () => {
             items:'Fruit Items',
             count:'10 items'
         },
-        {
-            img:'/assets/images/watch.png',
-            items:'Watches',
-            count:'40 items'
-        },
-        {
-            img:'/assets/images/groceryItem.png',
-            items:'Grocery Items',
-            count:'233 items'
-        },
-        {
-            img:'/assets/images/gift.png',
-            items:'Gift Items',
-            count:'3 items'
-        },
-        {
-            img:'/assets/images/stationery.png',
-            items:'Stationery Items',
-            count:'9 items'
-        }
+        // {
+        //     img:'/assets/images/watch.png',
+        //     items:'Watches',
+        //     count:'40 items'
+        // },
+        // {
+        //     img:'/assets/images/groceryItem.png',
+        //     items:'Grocery Items',
+        //     count:'233 items'
+        // },
+        // {
+        //     img:'/assets/images/gift.png',
+        //     items:'Gift Items',
+        //     count:'3 items'
+        // },
+        // {
+        //     img:'/assets/images/stationery.png',
+        //     items:'Stationery Items',
+        //     count:'9 items'
+        // }
 
     ]
 
 
     return (
-        <div className="relative max-w-7xl mx-auto md:mt-[50px] max-md:mt-[30px] max-md:px-4">
+        <div className="relative max-w-7xl mx-auto md:mt-[50px] max-md:mt-[20px] max-md:px-4">
             <div className="max-w-6xl mx-auto md:px-4">
                 <div className="md:mt-10 max-md:mt-5 flex flex-col items-start  max-md:justify-center max-md:items-center">
                     
@@ -94,23 +94,23 @@ const HomeCategory = () => {
                         arr.map((ele,i) => (
                             <div key={i} className='md:w-[150px] md:h-[180px] max-md:w-[200px] h-full md:rounded-[16px] max-md:rounded-[10px] bg-[#FEEFEA] flex flex-col items-center justify-center'>
 
-                                <img className='md:w-[80px] md:h-[80px] object-cover rounded-[16px]' alt='No Preview' fill src={ele.img} />
-                                <p className='text-[#253D4E] font-[600] md:text-[18px] md:mt-4 text-center'>{ele.items}</p>
-                                <p className='text-[#ADADAD] font-[500] md:text-[14px] text-center'>{ele.count}</p>
+                                <img className='md:w-[80px] max-md:h-[50px] max-md:w-[50px] md:h-[80px] object-cover rounded-[16px]' alt='No Preview' fill src={ele.img} />
+                                <p className='text-[#253D4E] font-[600] md:text-[18px] max-md:text-[14px] md:mt-4 text-center'>{ele.items}</p>
+                                <p className='text-[#ADADAD] font-[500] md:text-[14px] max-md:text-[12px] text-center'>{ele.count}</p>
                             </div>
 
                         ))
                     }
                 </div>
-                <div className='w-full h-[50px] absolute left-0 top-[45%] md:px-8 max-md:px-4 flex justify-between items-center z-20'>
-                    <FaCircleChevronLeft className='text-[#1a3d9733] text-[30px] md:ml-4 HomeSlidePrev cursor-pointer max-md:text-blue-600' />
-                    <FaCircleChevronRight className='text-[#1a3d9733] text-[30px] md:mr-4 HomeSlideNext cursor-pointer max-md:text-blue-600' />
+                <div className='w-full h-[50px] absolute left-0 md:top-[45%] max-md:top-[40%] md:px-8 max-md:px-2 flex justify-between items-center z-20'>
+                    <FaCircleChevronLeft className='text-[#1a3d9733] text-[30px] md:ml-4 HomeSlidePrev cursor-pointer max-md:text-[#ff7c09a8]'/>
+                    <FaCircleChevronRight className='text-[#1a3d9733] text-[30px] md:mr-4 HomeSlideNext cursor-pointer max-md:text-[#ff7c09a8]'/>
                 </div>
             </div>
             <div className="flex justify-center ">
                 <Link
                     href={'/categories'}
-                    className="inline-block font-medium max-md:text-[16px] bg-transparent border hover:bg-[#FF7D09] hover:text-[#FFF] text-[#FF7D09] w-fit  max-md:mt-2 border-[#FF7D09] md:py-[14px] max-md:py-[10px] md:px-[36px] max-md:px-[22px] rounded-[16px]"
+                    className="inline-block font-medium max-md:text-[14px] bg-transparent border hover:bg-[#FF7D09] hover:text-[#FFF] text-[#FF7D09] w-fit max-md:mt-2 border-[#FF7D09] md:py-[14px] max-md:py-[10px] md:px-[36px] max-md:px-[22px] md:rounded-[16px] max-md:rounded-[8px]"
                 >
                     Explore More
                 </Link>

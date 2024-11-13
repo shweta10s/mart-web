@@ -40,11 +40,11 @@ const HomeDepartment = () => {
                     Our Department
                 </p>
             </div>
-            <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:gap-4 max-md:gap-6 md:my-4 max-md:my-2">
+            <div className="grid md:grid-cols-4 max-md:grid-cols-2 md:gap-4 max-md:gap-6 md:my-4 max-md:my-2">
                 {
                     arr.map((ele, i) => (
                         <div key={i} className="bg-white rounded-lg shadow-lg p-4 max-w-sm">
-                            <div className="relative md:h-[220px] max-md:h-[26vh] w-full rounded-lg overflow-hidden">
+                            <div className="relative md:h-[220px] max-md:h-[28vh] w-full rounded-lg overflow-hidden">
                                 <Image
                                     alt='No Preview'
                                     src={ele.img}
@@ -55,7 +55,7 @@ const HomeDepartment = () => {
                             </div>
                             <div className="">
 
-                                <p className="md:text-[20px] text-center max-md:text-[20px] font-[500] text-[#00171F] my-2">
+                                <p className="md:text-[20px] max-md:text-[18px] text-center font-[500] text-[#00171F] my-2">
                                 {ele.name}
                                 </p>
                                 {/* <div className="text-gray-500 md:text-[16px] max-md:text-[16px] md:mb-1 max-md:mb-2">{ele.det}</div> */}

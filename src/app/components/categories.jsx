@@ -62,20 +62,20 @@ const Categories = () => {
             <p className="md:text-[40px] max-md:text-[24px] max-md:text-center font-[400] tracking-tight text-[#80B500]">
                         Explore Categories
                     </p>
-            </div>
-            <div className='grid md:grid-cols-3 sm:grid-cols-2 md:gap-x-4 md:gap-y-8 max-md:gap-y-4 md:my-4 max-md:my-2'>
+            </div> 
+            <div className='grid md:grid-cols-3 max-md:grid-cols-2 md:gap-x-4 max-md:gap-x-2 md:gap-y-8 max-md:gap-y-4 md:my-4 max-md:my-2'>
                 {
                     pack.slice(0, isStat).map((ele, i) => (
                         <div key={i} className="bg-[#FEEFEA] flex flex-col justify-center items-center rounded-lg shadow-lg pb-4 max-w-sm">
                             <div className=" md:h-full flex justify-center items-center py-2 max-md:h-[26vh] w-full rounded-lg overflow-hidden">
                             <img
-                            className='md:w-[180px] md:h-[180px] object-cover rounded-[16px]' alt='No Preview' fill src={ele.img} />
+                            className='md:w-[180px] max-md:w-[120px] md:h-[180px] max-md:h-[120px] object-cover rounded-[16px]' alt='No Preview' fill src={ele.img} />
 
                             </div>
                             <div className="">
 
-                            <p className='text-[#253D4E] font-[600] md:text-[18px] md:mt-4 text-center'>{ele.items}</p>
-                            <p className='text-[#ADADAD] font-[500] md:text-[14px] text-center'>{ele.count}</p>
+                            <p className='text-[#253D4E] font-[600] md:text-[18px] max-md:text-[18px] md:mt-4 text-center'>{ele.items}</p>
+                            <p className='text-[#ADADAD] font-[500] md:text-[14px] max-md:text-[14px] text-center'>{ele.count}</p>
                                 
                                 <div className="grid">
 
@@ -97,11 +97,11 @@ const Categories = () => {
                     (pack.length >= isStat) ?
                         <button 
                         onClick={handleMore} 
-                        className="inline-block font-medium max-md:text-[16px] bg-transparent border hover:bg-[#FF7D09] hover:text-[#FFF] text-[#FF7D09] w-fit  max-md:mt-2 border-[#FF7D09] md:py-[14px] max-md:py-[10px] md:px-[36px] max-md:px-[22px] rounded-[16px]">View More</button>
+                        className="inline-block font-medium max-md:text-[14px] bg-transparent border hover:bg-[#FF7D09] hover:text-[#FFF] text-[#FF7D09] w-fit max-md:mt-2 border-[#FF7D09] md:py-[14px] max-md:py-[10px] md:px-[36px] max-md:px-[22px] md:rounded-[16px] max-md:rounded-[8px]">View More</button>
                         :
                         <button 
                         onClick={() => settIsStat(3)} 
-                        className="inline-block font-medium max-md:text-[16px] bg-transparent border hover:bg-[#FF7D09] hover:text-[#FFF] text-[#FF7D09] w-fit  max-md:mt-2 border-[#FF7D09] md:py-[14px] max-md:py-[10px] md:px-[36px] max-md:px-[22px] rounded-[16px]">View Less</button>
+                        className="inline-block font-medium max-md:text-[14px] bg-transparent border hover:bg-[#FF7D09] hover:text-[#FFF] text-[#FF7D09] w-fit max-md:mt-2 border-[#FF7D09] md:py-[14px] max-md:py-[10px] md:px-[36px] max-md:px-[22px] md:rounded-[16px] max-md:rounded-[8px]">View Less</button>
 
                 }
             </div>
